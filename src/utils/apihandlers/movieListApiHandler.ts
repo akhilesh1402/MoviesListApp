@@ -6,7 +6,7 @@ import {FETCH_MOVIES_LIST_API_BASE_URL} from '../constants';
 export const fetchMoviesList =
   (pageNumber: number) =>
   async (dispatch: AppDispatch, getState: () => RootState) => {
-    // dispatch(setLoading(true));
+    dispatch(setLoading(true));
     const {token} = getState().userAuthDetails;
     const currLang = getState().language.selectedLanguage;
 
