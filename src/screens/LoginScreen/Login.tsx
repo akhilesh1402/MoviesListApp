@@ -51,7 +51,7 @@ const Login: React.FC = () => {
                     disabled={loginBtnDisabled}
                     onPress={onPressLogin}
                     testID="loginButton" style={{ ...styles.button, backgroundColor: loginBtnDisabled ? "grey" : "#111" }}>
-                    <Text style={{ ...styles.buttonTitle, color: loginBtnDisabled ? "lightgrey" : "white" }} >{t("login")}</Text>
+                    <Text style={{ ...styles.buttonTitle, color: loginBtnDisabled ? "lightgrey" : "white" }} >{t("submit")}</Text>
                 </TouchableOpacity>
             </View>
             <View style={{ width: "100%", paddingVertical: 20 }}>
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
         marginTop: 40
     },
     buttonTitle: {
-        fontSize: 20,
+        fontSize: 18,
         fontFamily: 'Arial',
     },
     errorText: {
