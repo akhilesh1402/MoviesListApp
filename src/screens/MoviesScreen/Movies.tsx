@@ -78,9 +78,9 @@ const Movies: React.FC = () => {
                     onEndReachedThreshold={0.5}
                     onEndReached={loadNextPage}
                 />}
-                {/* {apiError && <View style={styles.overlay}>
-                    <Text>{apiError}</Text>
-                </View>} */}
+                {apiError && <View style={styles.overlay}>
+                    <Text style={styles.movieTitle}>{apiError}</Text>
+                </View>}
             </>}
         </View>
     );
@@ -113,7 +113,6 @@ const styles = StyleSheet.create({
         fontFamily: "Arial",
         paddingTop: 2,
         textAlign: 'left',
-        // alignSelf: 'flex-start',
         fontWeight: "bold",
         paddingHorizontal: 10,
         flexWrap: "wrap"
