@@ -1,0 +1,4 @@
+export const TOKEN =
+  'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4MDZiNDYzNjFjYWM1ZGMxM2ZmZjdlOWE3ZWEyYTE1MyIsInN1YiI6IjY2MmNmZDVhYTgwNjczMDEyNWU4M2I2NCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.BaQbEgvoHE8uxM5u8Ozf4ysrVJohKjcgOHOgjMBS-x0';
+export const FETCH_MOVIES_LIST_API_BASE_URL =
+  'https://api.themoviedb.org/3/movie/popular';
