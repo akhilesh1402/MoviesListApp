@@ -10,5 +10,7 @@
   "english": "English",
   "arabic": "Arabic",
   "save": "Save",
-  "submit": "Submit"
+  "submit": "Submit",
+  "emailError": "Please enter a valid email address.",
+  "pwdError": "Password must be 8 characters long."
 }
