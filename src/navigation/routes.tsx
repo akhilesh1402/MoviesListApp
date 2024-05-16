@@ -14,8 +14,8 @@ import AsyncStorage from "@react-native-community/async-storage";
 const Stack = createNativeStackNavigator<RootStackNavigatorParamList>();
 
 const RootStack = () => {
-    // const isLoggedIn = useSelector((state: RootState) => state.userAuthDetails.isLoggedIn);
-    let isLoggedIn = false;
+    const isLoggedIn = useSelector((state: RootState) => state.userAuthDetails.isLoggedIn);
+
     const { t } = useTranslation();
     const dispatch = useDispatch();
     const navigation = useNavigation<StackScreenNavigationProp>();

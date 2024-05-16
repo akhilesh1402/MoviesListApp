@@ -83,14 +83,14 @@ const styles = StyleSheet.create({
         marginVertical: 10,
         marginHorizontal: 10,
         borderRadius: 10,
-        height: 250,
+        height: 300,
         width: "45%",
         borderWidth: 2,
         borderColor: "#11111120"
     },
     imageCont: {
         width: "100%",
-        height: 150,
+        height: 200,
         borderTopLeftRadius: 8,
         borderTopRightRadius: 8
     },
