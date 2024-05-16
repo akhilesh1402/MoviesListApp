@@ -1,17 +1,3 @@
-// import { View, Text } from 'react-native'
-// import React from 'react'
-
-// const Movies: React.FC = () => {
-//     return (
-//         <View>
-//             <Text>Movies</Text>
-//         </View>
-//     )
-// }
-
-// export default Movies;
-
-
 import React, { useEffect, useState } from 'react';
 import { FlatList, Text, View, StyleSheet, Image, ActivityIndicator } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
