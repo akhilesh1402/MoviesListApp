@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
     marginBottom: 10,
     borderWidth: 2,
-    borderColor: 'lightgrey',
+    borderColor: '#ffcc00',
     borderRadius: 10,
     borderStyle: 'solid',
   },
@@ -102,14 +102,16 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     paddingHorizontal: 10,
     paddingVertical: 12,
-    backgroundColor: '#B7C9E270',
+    backgroundColor: '#ffcc00',
     borderTopLeftRadius: 8,
-    borderTopRightRadius: 8
+    borderTopRightRadius: 8, borderBottomLeftRadius: 2,
+    borderBottomRightRadius: 2
   },
   pickerTitle: {
     fontStyle: 'normal',
-    fontSize: 14,
-    color: '#11111190',
+    fontSize: 15,
+    color: '#111',
+    fontWeight: "400"
   },
   saveBtn: {
     paddingVertical: 10,
@@ -132,7 +134,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     paddingVertical: 10,
     borderTopWidth: 2,
-    borderColor: "lightgrey"
+    borderColor: "#ffcc00"
   },
   language: {
     paddingHorizontal: 10,

@@ -29,35 +29,35 @@ const Login: React.FC = () => {
 
 
     return (
-        <><View style={styles.container}>
-            <Text style={styles.loginHeader}>{t("login")}</Text>
-            <TextInput
-                style={styles.input}
-                placeholder={t("email")}
-                value={email}
-                onChangeText={setEmail}
-                testID="emailInput" />
-            {emailError && <Text style={styles.errorText}>{emailError}</Text>}
-            <TextInput
-                style={styles.input}
-                placeholder={t("password")}
-                secureTextEntry
-                value={password}
-                onChangeText={setPassword}
-                testID="passwordInput" />
-            {passwordError && <Text style={styles.errorText}>{passwordError}</Text>}
-            <TouchableOpacity
-                disabled={loginBtnDisabled}
-                onPress={onPressLogin}
-                testID="loginButton" style={{ ...styles.button, backgroundColor: loginBtnDisabled ? "grey" : "#111" }}>
-                <Text style={{ ...styles.buttonTitle, color: loginBtnDisabled ? "lightgrey" : "white" }} >{t("login")}</Text>
-            </TouchableOpacity>
+        <View style={styles.container}>
+            <View style={{ width: "100%", borderWidth: 2.5, borderColor: "lightgrey", backgroundColor: "#f2f2f2", alignItems: "center", padding: 10, borderRadius: 15 }}>
+                <Text style={styles.loginHeader}>{t("login")}</Text>
+                <TextInput
+                    style={styles.input}
+                    placeholder={t("email")}
+                    value={email}
+                    onChangeText={setEmail}
+                    testID="emailInput" />
+                {emailError && <Text style={styles.errorText}>{emailError}</Text>}
+                <TextInput
+                    style={styles.input}
+                    placeholder={t("password")}
+                    secureTextEntry
+                    value={password}
+                    onChangeText={setPassword}
+                    testID="passwordInput" />
+                {passwordError && <Text style={styles.errorText}>{passwordError}</Text>}
+                <TouchableOpacity
+                    disabled={loginBtnDisabled}
+                    onPress={onPressLogin}
+                    testID="loginButton" style={{ ...styles.button, backgroundColor: loginBtnDisabled ? "grey" : "#111" }}>
+                    <Text style={{ ...styles.buttonTitle, color: loginBtnDisabled ? "lightgrey" : "white" }} >{t("login")}</Text>
+                </TouchableOpacity>
+            </View>
             <View style={{ width: "100%", paddingVertical: 20 }}>
                 <LanguagePicker />
             </View>
         </View>
-
-        </>
     );
 };
 
@@ -82,6 +82,7 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderColor: '#111',
         borderRadius: 10,
+        backgroundColor: "white"
     },
     button: {
         width: '100%',
