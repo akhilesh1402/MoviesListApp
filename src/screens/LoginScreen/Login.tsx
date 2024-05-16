@@ -38,7 +38,7 @@ const Login: React.FC = () => {
                     value={email}
                     onChangeText={setEmail}
                     testID="emailInput" />
-                {emailError && <Text style={styles.errorText}>{emailError}</Text>}
+                {emailError && <Text style={styles.errorText}>{t(emailError)}</Text>}
                 <TextInput
                     style={styles.input}
                     placeholder={t("password")}
@@ -46,7 +46,7 @@ const Login: React.FC = () => {
                     value={password}
                     onChangeText={setPassword}
                     testID="passwordInput" />
-                {passwordError && <Text style={styles.errorText}>{passwordError}</Text>}
+                {passwordError && <Text style={styles.errorText}>{t(passwordError)}</Text>}
                 <TouchableOpacity
                     disabled={loginBtnDisabled}
                     onPress={onPressLogin}
